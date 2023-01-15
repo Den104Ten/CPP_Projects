@@ -64,3 +64,64 @@ cin » a » b;
 cout « (a + b - 1) / b;
 return 0;
 }*/
+
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << b % a;
+    return 0;
+}*/
+
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cin >> x;
+    cout << x % 10;
+}*/
+
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y;
+    cin >> x;
+    y = x * 0.1;
+    cout << y;
+    return 0;
+}*/
+
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, c1, d;
+    cin >> a; //476
+    b = a % 10;
+    c = a * 0.1;
+    c1 = c % 10;
+    d = a * 0.01;
+    cout << b + c1 + d;
+}*/
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a1, a2, a3;
+    cin >> a1 >> a2 >> a3;
+    cout << (a1 + a2 + a3) / 2;
+}
+
+
+
+
