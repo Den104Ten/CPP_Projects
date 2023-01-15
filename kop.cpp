@@ -115,13 +115,17 @@ int main() {
 
 #include <iostream>
 using namespace std;
-
 int main() {
-    int a1, a2, a3;
-    cin >> a1 >> a2 >> a3;
-    cout << (a1 + a2 + a3) / 2;
-}
+    int a, b, c;
+    cin >> a >> b >> c;
 
+    int x = a / 2 + a % 2;
+    int y = b / 2 + b % 2;
+    int z = c / 2 + c % 2;
+
+    cout << x + y + z;
+    return 0;
+}
 
 
 
