@@ -113,15 +113,90 @@ int main() {
 }*/
 
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 int main() {
     int a1, a2, a3;
     cin >> a1 >> a2 >> a3;
     cout << (a1 + a2 + a3) / 2;
+}*/
+
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int k = 0, n = 3, m = 3;
+    int a[n][m];
+    int i, j;
+    for (i = 0; i < n; i++)
+    for (j = 0; j < m; j++)
+    cin >> a[i][j];
+    for (i = 0; i < n; i++)
+    for (j = 1; j < m; j++)
+    if ((a[i-1][j-1] < a[i][j]) && (a[i][j] < a[i+1][j+1])) k++;
+    for (i = 0; i < n; i++)
+    {
+    for (j = 0; j < m; j++)
+        {
+        cout << a[i][j] << "\t";
+        }
+    cout << endl;
+    }
+    cout << k << endl;
+
+}*/
+
+#include <iostream>
+using namespace std;
+int main() {
+
+    int m,n,k,l,i,j,t,bl;
+    char **a;
+    cout << "Введите n: ";
+    cin >> n;
+    cout << "Введите m: ";
+    cin >> m;
+    a = new char*[n];
+    for(i = 0;i < n;i++)
+        a[i]=new char[m];
+    for(i = 0;i < n;i++)
+    {
+        for(j = 0;j < m;j++)
+        {
+            cout << "Bведите a["<<i<<"]["<<j<<"] ";
+            cin >> a[i][j];
+        }
+    }
+    for(i = 0;i < n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            cout << 5 << a[i][j];
+        }
+        cout<<endl;
+        }
+        t=0;
+        for(i = 0;i < n;i++) {
+            for (j = 0; j < m; j++) {
+                bl = true;
+                for (k = 0; k < (i + 1); k++) {
+                    for (l = 0; l < (i + 1); l++) {
+                        if (a[i][i] == a[k][l]) {
+                            bl = false;
+                            break;
+                        }
+                    }
+                    if (bl) t++;
+                }
+            }
+        }
+        cout << "Ответ: "<< t <<endl;
+        for(i = 0;i < m;i++)
+            delete a[i];
+        delete []a;
+        a = NULL;
+        return 0;
 }
-
-
-
 
